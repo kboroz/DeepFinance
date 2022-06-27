@@ -1,0 +1,15 @@
+# Black-Scholes Formel
+def bs_option_value(S0, K, T, r, sigma):
+    'Function to calculate the value of a call option based on the Black-Scholes formula'
+    'arguments:'
+    'S0: inital stock price'
+    'K: strike price'
+    'T: maturity'
+    'r: risk free rate (constant)'
+    'sigma: volatility'
+    'returns: option value'
+    #calculate d1 and d2
+    d1 = ((np.log(S0 / K) + (r + 0.5 * sigma ** 2) * T) / (sigma * np.sqrt(T)))
+    d2 = ((np.log(S0 / K) + (r - 0.5 * sigma ** 2) * T) / (sigma * np.sqrt(T)))
+    option_value = S0 * stats.norm.cdf(d1, 0.0, 1.0) - K * np.exp(-r * T) * stats.norm.cdf(d2, 0.0, 1.0)
+    return option_value
