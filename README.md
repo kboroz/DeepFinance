@@ -2,7 +2,7 @@
 
 This GitHub-repository includes a couple of IPython-Notebooks which where executed to fullfil the requirements in the OpenCampus "Deep Learning Course " held in the summer term 2022.
 
-Starting point is the "black_scholes_learning_prices.ipynb" file where we trained a neural network to predict prices.
+Starting point is the "black_scholes_learning_prices.ipynb" file where we trained a neural network to learn and predict prices.
 
 In a simiar fashion the "ModelParameterVasicek.ipynb" files shows how to use NN to train, learn and predict the parameters of an underlying stochastic process - here i.e. a so-called Vasicek-model.
 
